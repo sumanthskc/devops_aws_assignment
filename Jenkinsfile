@@ -1,4 +1,4 @@
-def AWS_CREDENTIALS_ID="4b45ce94-9f38-4058-b72a-b1241d2b068c"
+def AWS_CREDENTIALS_ID="78837e91-ad17-4100-b91f-77dde81cdef2"
 def BUCKET_NAME="devops-eval-buck-1"
 pipeline{
 

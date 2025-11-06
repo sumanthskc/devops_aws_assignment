@@ -28,7 +28,7 @@ def handle_post(event):
     try:
         payload = json.loads(event.get("body", "{}"))
         if "Emp_Id" not in payload:
-            return response(400, {"message""Enter emp_id"})
+            return response(400, {"message":"Enter emp_id"})
         
         table.put_item(Item=payload)
         return response(201, {"message": "Item inserted successfully", "item": payload})

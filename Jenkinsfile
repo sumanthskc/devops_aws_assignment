@@ -13,6 +13,7 @@ pipeline{
             steps {
                 
                 sh "zip lambda_function.zip lambda_function.py"
+                sh "ls -l"
                 withCredentials([aws(credentialsId: AWS_CREDENTIALS_ID, variablePrefix: 'AWS')]) {
                     sh 'aws s3 lambda_function.zip s3://devops-eval-buck-1'
                 }
